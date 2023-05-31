@@ -2,30 +2,39 @@ body {
   background-color: #e7f6f2;
   color: #2c3333;
 }
-
+a {
+  text-decoration: none;
+  color: #2c3333;
+}
+button {
+  cursor: default;
+}
+span {
+  color: #395b64;
+}
 /* ======================HEADER===================== */
 .header_container {
   display: flex;
   color: #2c3333;
   align-items: center;
+  justify-content: space-between;
 
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .header_logo {
   display: flex;
   gap: 20px;
   align-items: center;
-
-  margin-right: 150px;
+  cursor: default;
 }
 
 .header_lista {
   display: flex;
-  gap: 100px;
+  gap: 70px;
   list-style: none;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -35,10 +44,18 @@ body {
   color: #2c3333;
   align-items: center;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-between;
 
-  margin-top: 150px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 80px;
 }
 
 .buttonDistance {
@@ -58,9 +75,152 @@ body {
   border-radius: 20px;
   border: none;
 }
-
-.gridRight {
+.iconsSocialMedia {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.gridLeft {
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.gridRight {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.imgHome {
+  width: 70%;
+}
+/* ==============PORTFOLIO================ */
+.portContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.containerPortfolio {
+  display: grid;
+  color: #2c3333;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: space-between;
+}
+
+.gridLeftPortfolio {
+  margin-top: 150px;
+  display: grid;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+}
+
+.gridRightPortfolio {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+}
+
+.imgPortfolio {
+  width: 90%;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* ==============EXPERIENCIA================ */
+.containerExp {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.gridDisplay {
+  display: grid;
+  color: #2c3333;
+  align-items: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: space-between;
+}
+.h1Exp {
+  font-size: 32px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardsExp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card1 {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #2c3333;
+  width: 600px;
+  height: 350px;
+}
+.card2 {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #395b64;
+  width: 600px;
+  height: 350px;
+}
+
+.footerExp {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h1FooterExp {
+  color: #395b64;
+}
+
+.h2FooterExp {
+  color: #2c3333;
+}
+/* ==============SOBRE================ */
+
+.circle {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.containerSobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: justify;
+  margin-left: 200px;
+  margin-right: 200px;
 }
