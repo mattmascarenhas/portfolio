@@ -1,0 +1,66 @@
+body {
+  background-color: #e7f6f2;
+  color: #2c3333;
+}
+
+/* ======================HEADER===================== */
+.header_container {
+  display: flex;
+  color: #2c3333;
+  align-items: center;
+
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.header_logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  margin-right: 150px;
+}
+
+.header_lista {
+  display: flex;
+  gap: 100px;
+  list-style: none;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* ======================HOME===================== */
+.container {
+  display: grid;
+  color: #2c3333;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.buttonDistance {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: #395b64;
+  color: #e7f6f2;
+  padding: 20px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  border-radius: 20px;
+  border: none;
+}
+
+.gridRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
