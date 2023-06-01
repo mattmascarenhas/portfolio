@@ -10,9 +10,9 @@ export function Header() {
           <h1>Matheus Mascarenhas</h1>
         </div>
       </Link>
-      <ul className="header_lista">
+      <ul className="header_lista container1">
         <li>
-          <Link href="/">home</Link>
+          <Link href="/">ínicio</Link>
         </li>
         <li>
           <Link href="/portfolio">portfólio</Link>
