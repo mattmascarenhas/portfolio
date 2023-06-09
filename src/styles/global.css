@@ -257,3 +257,45 @@ span {
   justify-content: center;
   margin-bottom: 30px;
 }
+
+/* =================== EFEITO AO PASSAR O MOUSE NO MENU ======================================== */
+.header_lista li a:hover {
+  opacity: 1;
+  font-weight: 700;
+}
+.header_lista li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #395b64;
+
+  position: relative;
+  bottom: -2rem;
+  left: -0.5rem;
+
+  display: block;
+
+  transition: width 0.2s;
+}
+
+.scroll .header_lista li a::after {
+  background-color: white;
+}
+
+.header_lista li a.active::after,
+.header_lista li a:hover::after {
+  padding-inline: 0.8rem;
+  width: 100%;
+}
+
+.scroll .header_lista li a.active,
+.scroll .header_lista li a:hover {
+  opacity: 1;
+}
+
+.scroll .header_lista a.button.active,
+.scroll .header_lista a.button:hover {
+  background-color: var(--primary-color);
+  filter: brightness(1.3);
+  border: none;
+}

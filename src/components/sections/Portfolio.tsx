@@ -1,5 +1,3 @@
-import AspasIcon from "@/components/icons/Aspas";
-
 export function Portfolio() {
   return (
     <div className="portContent">

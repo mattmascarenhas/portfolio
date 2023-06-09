@@ -12,19 +12,19 @@ export function Header() {
       </Link>
       <ul className="header_lista container1">
         <li>
-          <Link href="/">ínicio</Link>
+          <Link href="#">ínicio</Link>
         </li>
         <li>
-          <Link href="/portfolio">portfólio</Link>
+          <Link href="#portfolio">portfólio</Link>
         </li>
         <li>
-          <Link href="/experiencia">experiência</Link>
+          <Link href="#experiencia">experiência</Link>
         </li>
         <li>
-          <Link href="/tecnologias">tecnologias</Link>
+          <Link href="#tecnologias">tecnologias</Link>
         </li>
         <li>
-          <Link href="/sobre">sobre</Link>
+          <Link href="#sobre">sobre</Link>
         </li>
       </ul>
     </div>
