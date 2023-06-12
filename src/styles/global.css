@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #e7f6f2;
   color: #2c3333;
@@ -12,6 +15,7 @@ button {
 span {
   color: #395b64;
 }
+
 /* ======================HEADER===================== */
 .header_container {
   display: flex;

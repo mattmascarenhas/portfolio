@@ -1,42 +1,34 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
+import { Link } from "react-scroll";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef(null);
-  const router = useRouter();
 
   useEffect(() => {
-    const handleScroll = () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
+    });
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", () => {});
     };
   }, []);
 
-  const scrollToSection = (sectionId: any) => {
+  const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleLinkClick = (e: any, sectionId: any) => {
-    e.preventDefault();
-    scrollToSection(sectionId);
-    router.push(`/#${sectionId}`);
+    const headerHeight = headerRef.current
+      ? (headerRef.current as HTMLDivElement).offsetHeight
+      : 0;
+    const offset = section ? section.offsetTop - headerHeight : 0;
+    window.scrollTo({ top: offset, behavior: "smooth" });
   };
 
   return (
@@ -45,39 +37,64 @@ export function Header() {
         scrolled ? "header_container_scrolled" : ""
       }`}
     >
-      <Link href="/">
+      <a href="/">
         <div className="header_logo">
-          <Logo fill={scrolled ? "#e7f6f2" : "#2c3333"} />
+          <Logo fill={`${scrolled ? `#e7f6f2` : "#2c3333"}`} />
           <h1>Matheus Mascarenhas</h1>
         </div>
-      </Link>
+      </a>
 
       <ul className="header_lista container1">
         <motion.li whileHover={{ scale: 1.1 }}>
-          <a href="#inicio" onClick={(e) => handleLinkClick(e, "inicio")}>
+          <Link
+            activeClass="active"
+            to="inicio"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={200}
+          >
             ínicio
-          </a>
+          </Link>
         </motion.li>
-        <motion.li whileHover={{ scale: 1.1 }}>
-          <a
-            href="#experiencia"
-            onClick={(e) => handleLinkClick(e, "experiencia")}
+        <motion.li
+          whileHover={{ scale: 1.1 }}
+          onClick={() => scrollToSection("experiencia")}
+        >
+          <Link
+            activeClass="active"
+            to="experiencia"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={200}
           >
             experiência
-          </a>
+          </Link>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }}>
-          <a
-            href="#tecnologias"
-            onClick={(e) => handleLinkClick(e, "tecnologias")}
+          <Link
+            activeClass="active"
+            to="tecnologias"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={200}
           >
             tecnologias
-          </a>
+          </Link>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }}>
-          <a href="#sobre" onClick={(e) => handleLinkClick(e, "sobre")}>
+          <Link
+            activeClass="active"
+            to="sobre"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={200}
+          >
             sobre
-          </a>
+          </Link>
         </motion.li>
       </ul>
     </div>

@@ -17,6 +17,10 @@
     "next-navigation": "^1.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.7"
   }
 }
