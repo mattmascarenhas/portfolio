@@ -9,7 +9,7 @@ import TypescriptIcon from "@/components/icons/Typescript";
 
 export function Tecnologias() {
   return (
-    <div>
+    <div className="containerTec">
       <div className="h1Tec">
         <h1>
           <span>Tecnologias</span> Utilizadas

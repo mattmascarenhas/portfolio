@@ -1,8 +1,10 @@
+"use client";
 import Link from "next/link";
 import FullStackDeveloper from "../FullStackDeveloper";
 import GitHubIcon from "../icons/Github";
 import LinkedinIcon from "../icons/Linkedin";
 import InstagramIcon from "../icons/Instagram";
+import { motion } from "framer-motion";
 
 export function Inicio() {
   return (
@@ -10,11 +12,15 @@ export function Inicio() {
       <div className="gridLeft">
         <FullStackDeveloper />
         <div className="buttonDistance">
-          <button className="button">
-            <Link href="/portfolio" style={{ color: "#e7f6f2" }}>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="button"
+          >
+            <Link href="#portfolio" style={{ color: "#e7f6f2" }}>
               Conheça meu portfólio
             </Link>
-          </button>
+          </motion.button>
         </div>
         <div className="iconsSocialMedia">
           <a href="https://github.com/mattmascarenhas">

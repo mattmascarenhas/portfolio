@@ -4,7 +4,7 @@ import LinkedinIcon from "@/components/icons/Linkedin";
 
 export function Sobre() {
   return (
-    <div>
+    <div className="continerSobrePrincipal">
       <div className="h1Exp">
         <h1>
           Matheus <span>Mascarenhas</span>
