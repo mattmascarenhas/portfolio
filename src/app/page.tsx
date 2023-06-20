@@ -14,7 +14,14 @@ export default function Home() {
         <section style={{ minHeight: "100vh", minWidth: "98vw" }} id="inicio">
           <Inicio />
         </section>
-        <section style={{ backgroundColor: "#ffffff" }} id="portfolio">
+        <section
+          style={{
+            minHeight: "100vh",
+            minWidth: "98vw",
+            backgroundColor: "#ffffff",
+          }}
+          id="portfolio"
+        >
           <Portfolio />
         </section>
         <section
