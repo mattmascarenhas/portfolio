@@ -8,12 +8,12 @@ export function Portfolio() {
       </div>
       <div className="containerPortfolio">
         <div className="gridLeftPortfolio">
-          <img src="mockup-portfolio.png" alt="" className="imgPortfolio" />
+          <img src="mockup-geradoc.png" alt="" className="imgPortfolio" />
           <p className="description">DESCRIÇÃO DO PROJETO</p>
         </div>
 
         <div className="gridRightPortfolio">
-          <img src="mockup-portfolio.png" alt="" className="imgPortfolio" />
+          <img src="mockup-geraduo.png" alt="" className="imgPortfolio" />
           <p className="description">DESCRIÇÃO DO PROJETO</p>
         </div>
       </div>

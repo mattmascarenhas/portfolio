@@ -2,7 +2,6 @@
 import Logo from "./Logo";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
 import { Link } from "react-scroll";
 
 export function Header() {
@@ -39,22 +38,34 @@ export function Header() {
     >
       <a href="/">
         <div className="header_logo">
-          <Logo fill={`${scrolled ? `#e7f6f2` : "#2c3333"}`} />
+          <Logo fill={`${scrolled ? `#ffffff` : "#303030"}`} />
           <h1>Matheus Mascarenhas</h1>
         </div>
       </a>
 
-      <ul className="header_lista container1">
+      <ul className="header_lista">
         <motion.li whileHover={{ scale: 1.1 }}>
           <Link
             activeClass="active"
             to="inicio"
             spy={true}
             smooth={true}
-            offset={0}
             duration={200}
+            style={{ cursor: "pointer" }}
           >
             ínicio
+          </Link>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }}>
+          <Link
+            activeClass="active"
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            duration={200}
+            style={{ cursor: "pointer" }}
+          >
+            portfólio
           </Link>
         </motion.li>
         <motion.li
@@ -66,8 +77,8 @@ export function Header() {
             to="experiencia"
             spy={true}
             smooth={true}
-            offset={0}
             duration={200}
+            style={{ cursor: "pointer" }}
           >
             experiência
           </Link>
@@ -78,8 +89,8 @@ export function Header() {
             to="tecnologias"
             spy={true}
             smooth={true}
-            offset={0}
             duration={200}
+            style={{ cursor: "pointer" }}
           >
             tecnologias
           </Link>
@@ -90,8 +101,8 @@ export function Header() {
             to="sobre"
             spy={true}
             smooth={true}
-            offset={0}
             duration={200}
+            style={{ cursor: "pointer" }}
           >
             sobre
           </Link>

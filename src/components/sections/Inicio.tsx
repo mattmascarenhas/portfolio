@@ -1,10 +1,10 @@
 "use client";
-import Link from "next/link";
 import FullStackDeveloper from "../FullStackDeveloper";
 import GitHubIcon from "../icons/Github";
 import LinkedinIcon from "../icons/Linkedin";
 import InstagramIcon from "../icons/Instagram";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export function Inicio() {
   return (
@@ -17,25 +17,35 @@ export function Inicio() {
             whileTap={{ scale: 0.9 }}
             className="button"
           >
-            <Link href="#portfolio" style={{ color: "#e7f6f2" }}>
+            <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={200}
+              style={{ color: "#ffffff" }}
+            >
               Conheça meu portfólio
             </Link>
           </motion.button>
         </div>
         <div className="iconsSocialMedia">
-          <a href="https://github.com/mattmascarenhas">
+          <a href="https://github.com/mattmascarenhas" target="_blank">
             <GitHubIcon />
           </a>
-          <a href="https://www.linkedin.com/in/mattmascarenhas/">
+          <a
+            href="https://www.linkedin.com/in/mattmascarenhas/"
+            target="_blank"
+          >
             <LinkedinIcon />
           </a>
-          <a href="https://www.instagram.com/mattmascarenhas/">
+          <a href="https://www.instagram.com/mattmascarenhas/" target="_blank">
             <InstagramIcon />
           </a>
         </div>
       </div>
       <div className="gridRight">
-        <img src="img1.png" alt="" className="imgHome" />
+        <img src="img3.png" alt="" className="imgHome" />
       </div>
     </div>
   );
