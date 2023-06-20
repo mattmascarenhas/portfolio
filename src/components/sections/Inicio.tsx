@@ -5,6 +5,7 @@ import LinkedinIcon from "../icons/Linkedin";
 import InstagramIcon from "../icons/Instagram";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import WhatsAppIcon from "../icons/Whatsapp";
 
 export function Inicio() {
   return (
@@ -41,6 +42,9 @@ export function Inicio() {
           </a>
           <a href="https://www.instagram.com/mattmascarenhas/" target="_blank">
             <InstagramIcon />
+          </a>
+          <a href="https://wa.me/5575991105310" target="_blank">
+            <WhatsAppIcon />
           </a>
         </div>
       </div>

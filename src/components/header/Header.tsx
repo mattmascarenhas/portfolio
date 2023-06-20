@@ -36,12 +36,19 @@ export function Header() {
         scrolled ? "header_container_scrolled" : ""
       }`}
     >
-      <a href="/">
+      <Link
+        activeClass="active"
+        to="inicio"
+        spy={true}
+        smooth={true}
+        duration={200}
+        style={{ cursor: "pointer" }}
+      >
         <div className="header_logo">
-          <Logo fill={`${scrolled ? `#ffffff` : "#303030"}`} />
+          <Logo fill={`${scrolled ? `#ffffff` : "#2c3333"}`} />
           <h1>Matheus Mascarenhas</h1>
         </div>
-      </a>
+      </Link>
 
       <ul className="header_lista">
         <motion.li whileHover={{ scale: 1.1 }}>

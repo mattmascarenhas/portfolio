@@ -11,25 +11,29 @@ export default function Home() {
   return (
     <div>
       <PageWrapper>
-        <section style={{ height: "100vh", width: "98vw" }} id="inicio">
+        <section style={{ minHeight: "100vh", minWidth: "98vw" }} id="inicio">
           <Inicio />
         </section>
-        <section
-          style={{ height: "100vh", width: "98vw", backgroundColor: "#ffffff" }}
-          id="portfolio"
-        >
+        <section style={{ backgroundColor: "#ffffff" }} id="portfolio">
           <Portfolio />
         </section>
-        <section style={{ height: "100vh", width: "98vw" }} id="experiencia">
+        <section
+          style={{ minHeight: "100vh", minWidth: "98vw" }}
+          id="experiencia"
+        >
           <Experiencia />
         </section>
         <section
-          style={{ height: "100vh", width: "98vw", backgroundColor: "#ffffff" }}
+          style={{
+            minHeight: "100vh",
+            minWidth: "98vw",
+            backgroundColor: "#ffffff",
+          }}
           id="tecnologias"
         >
           <Tecnologias />
         </section>
-        <section style={{ height: "100vh", width: "98vw" }} id="sobre">
+        <section style={{ minHeight: "100vh", minWidth: "98vw" }} id="sobre">
           <Sobre />
         </section>
       </PageWrapper>

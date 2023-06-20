@@ -1,6 +1,7 @@
 import GitHubIcon from "@/components/icons/Github";
 import InstagramIcon from "@/components/icons/Instagram";
 import LinkedinIcon from "@/components/icons/Linkedin";
+import WhatsAppIcon from "../icons/Whatsapp";
 
 export function Sobre() {
   return (
@@ -32,6 +33,9 @@ export function Sobre() {
           </a>
           <a href="https://www.instagram.com/mattmascarenhas/">
             <InstagramIcon />
+          </a>
+          <a href="https://wa.me/5575991105310" target="_blank">
+            <WhatsAppIcon />
           </a>
         </div>
       </div>
