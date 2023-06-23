@@ -9,38 +9,21 @@ import Tecnologias from "@/components/sections/Tecnologias";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <PageWrapper>
-        <section style={{ minHeight: "100vh", minWidth: "98vw" }} id="inicio">
+        <section id="inicio" className="sections">
           <Inicio />
         </section>
-        <section
-          style={{
-            minHeight: "100vh",
-            minWidth: "98vw",
-            backgroundColor: "#ffffff",
-          }}
-          id="portfolio"
-        >
+        <section className="sectionsWhite" id="portfolio">
           <Portfolio />
         </section>
-        <section
-          style={{ minHeight: "100vh", minWidth: "98vw" }}
-          id="experiencia"
-        >
+        <section className="sections" id="experiencia">
           <Experiencia />
         </section>
-        <section
-          style={{
-            minHeight: "100vh",
-            minWidth: "98vw",
-            backgroundColor: "#ffffff",
-          }}
-          id="tecnologias"
-        >
+        <section className="sectionsWhite" id="tecnologias">
           <Tecnologias />
         </section>
-        <section style={{ minHeight: "100vh", minWidth: "98vw" }} id="sobre">
+        <section className="sections" id="sobre">
           <Sobre />
         </section>
       </PageWrapper>

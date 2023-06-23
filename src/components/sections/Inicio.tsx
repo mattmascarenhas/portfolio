@@ -6,12 +6,14 @@ import InstagramIcon from "../icons/Instagram";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import WhatsAppIcon from "../icons/Whatsapp";
+import FullStackDeveloperResponsive from "./FullStackDeveloperResponsive";
 
 export function Inicio() {
   return (
     <div className="container">
       <div className="gridLeft">
         <FullStackDeveloper />
+        <FullStackDeveloperResponsive />
         <div className="buttonDistance">
           <motion.button
             whileHover={{ scale: 1.1 }}

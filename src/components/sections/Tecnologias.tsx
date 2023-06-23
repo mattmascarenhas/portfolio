@@ -22,13 +22,17 @@ export function Tecnologias() {
           </h3>
         </div>
         <div className="iconsTec">
-          <TypescriptIcon />
-          <ReactIcon />
-          <HtmlIcon />
-          <CssIcon />
-          <CsharpIcon />
-          <img src="aspnet.png" alt="" width={120} />
-          <img src="sqlserver.png" alt="" width={280} />
+          <div style={{ display: "flex", gap: 20 }}>
+            <TypescriptIcon />
+            <ReactIcon />
+            <HtmlIcon />
+            <CssIcon />
+          </div>
+          <div style={{ display: "flex", gap: 20 }}>
+            <CsharpIcon />
+            <img src="aspnet.png" alt="" width={120} />
+            <img src="sqlserver.png" alt="" width={300} />
+          </div>
         </div>
       </div>
       <div>
@@ -38,11 +42,13 @@ export function Tecnologias() {
           </h3>
         </div>
         <div className="iconsTec">
-          <JavaScriptIcon />
-          <img src="node.png" alt="" width={80} />
-          <AngularIcon />
-          <JavaIcon />
-          <img src="mysql.png" alt="" width={90} />
+          <div style={{ display: "flex", gap: 20 }}>
+            <JavaScriptIcon />
+            <img src="node.png" alt="" width={80} />
+            <AngularIcon />
+            <JavaIcon />
+            <img src="mysql.png" alt="" width={90} />
+          </div>
         </div>
       </div>
     </div>

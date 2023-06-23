@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
 body {
   background-color: #f1faf8;
   color: #2c3333;
@@ -14,6 +11,16 @@ button {
 }
 span {
   color: #395b64;
+}
+
+.sections {
+  min-width: 100vh;
+  min-height: 98vh;
+}
+.sectionsWhite {
+  min-width: 100vh;
+  min-height: 98vh;
+  background-color: #ffffff;
 }
 
 /* ======================HEADER===================== */
@@ -33,7 +40,7 @@ span {
 }
 
 .header_container_scrolled {
-  background-color: #243030;
+  background-color: ;
   color: #ffffff;
 }
 
@@ -67,6 +74,7 @@ span {
   text-decoration: underline;
 }
 /* ======================HOME===================== */
+
 .container {
   display: grid;
   color: #2c3333;
@@ -79,7 +87,9 @@ span {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+.fullstackDeveloperResponsive {
+  display: none;
+}
 .icons {
   display: flex;
   align-items: center;
@@ -114,6 +124,8 @@ span {
 }
 .gridLeft {
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -158,7 +170,7 @@ span {
 }
 
 .imgPortfolio {
-  width: 90%;
+  width: 100%;
 }
 
 .description {
@@ -279,9 +291,10 @@ span {
 }
 .iconsTec {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .h1Tec {
   font-size: 32px;
@@ -334,3 +347,122 @@ span {
   filter: brightness(1.3);
   border: none;
 } */
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: full;
+    max-width: full;
+  }
+  .sections {
+    min-width: full;
+    max-width: full;
+    width: auto;
+  }
+  .sectionsWhite {
+    background-color: #ffffff;
+  }
+  .gridLeft {
+    display: flex;
+    flex-direction: column;
+    margin-top: 450px;
+    justify-content: center;
+  }
+  .gridRight {
+    display: none;
+  }
+  .fullstackDeveloper {
+    display: none;
+  }
+  .fullstackDeveloperResponsive {
+    display: flex;
+  }
+  .buttonDistance {
+    margin-top: 400px;
+  }
+  /* ============= portfolio =============== */
+
+  .containerPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 530px;
+  }
+  .gridPortfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h3,
+  h1 {
+    text-align: center;
+  }
+  /* ============= experiencia =============== */
+  .containerExp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardsExp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .card1,
+  .card2 {
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    height: 350px;
+    color: #e7f6f2;
+  }
+  .h2FooterExp {
+    width: 700px;
+    margin-bottom: 0px;
+  }
+  .footerExp {
+    margin-top: 40px;
+  }
+  .h1Exp {
+    margin-bottom: 60px;
+  }
+  /* ============= tecnologia =============== */
+  .iconsTec {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+}
